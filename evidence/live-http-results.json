@@ -1,0 +1,184 @@
+[
+  {
+    "request": "01 Breed POST",
+    "method": "POST",
+    "url": "http://127.0.0.1:8765/api/breeds/",
+    "request_body": {
+      "name": "Labrador",
+      "size": "Large",
+      "friendliness": 5,
+      "trainability": 5,
+      "sheddingamount": 4,
+      "exerciseneeds": 5
+    },
+    "status": 201,
+    "response_body": {
+      "id": 1,
+      "name": "Labrador",
+      "size": "Large",
+      "friendliness": 5,
+      "trainability": 5,
+      "sheddingamount": 4,
+      "exerciseneeds": 5
+    }
+  },
+  {
+    "request": "02 Breed GET list",
+    "method": "GET",
+    "url": "http://127.0.0.1:8765/api/breeds/",
+    "request_body": null,
+    "status": 200,
+    "response_body": [
+      {
+        "id": 1,
+        "name": "Labrador",
+        "size": "Large",
+        "friendliness": 5,
+        "trainability": 5,
+        "sheddingamount": 4,
+        "exerciseneeds": 5
+      }
+    ]
+  },
+  {
+    "request": "03 Breed GET detail",
+    "method": "GET",
+    "url": "http://127.0.0.1:8765/api/breeds/1",
+    "request_body": null,
+    "status": 200,
+    "response_body": {
+      "id": 1,
+      "name": "Labrador",
+      "size": "Large",
+      "friendliness": 5,
+      "trainability": 5,
+      "sheddingamount": 4,
+      "exerciseneeds": 5
+    }
+  },
+  {
+    "request": "04 Breed PUT",
+    "method": "PUT",
+    "url": "http://127.0.0.1:8765/api/breeds/1",
+    "request_body": {
+      "name": "Golden Retriever",
+      "size": "Large",
+      "friendliness": 5,
+      "trainability": 5,
+      "sheddingamount": 4,
+      "exerciseneeds": 5
+    },
+    "status": 200,
+    "response_body": {
+      "id": 1,
+      "name": "Golden Retriever",
+      "size": "Large",
+      "friendliness": 5,
+      "trainability": 5,
+      "sheddingamount": 4,
+      "exerciseneeds": 5
+    }
+  },
+  {
+    "request": "05 Dog POST",
+    "method": "POST",
+    "url": "http://127.0.0.1:8765/api/dogs/",
+    "request_body": {
+      "name": "Buddy",
+      "age": 3,
+      "breed": 1,
+      "gender": "Male",
+      "color": "Yellow",
+      "favoritefood": "Chicken",
+      "favoritetoy": "Ball"
+    },
+    "status": 201,
+    "response_body": {
+      "id": 1,
+      "name": "Buddy",
+      "age": 3,
+      "breed": 1,
+      "gender": "Male",
+      "color": "Yellow",
+      "favoritefood": "Chicken",
+      "favoritetoy": "Ball"
+    }
+  },
+  {
+    "request": "06 Dog GET list",
+    "method": "GET",
+    "url": "http://127.0.0.1:8765/api/dogs/",
+    "request_body": null,
+    "status": 200,
+    "response_body": [
+      {
+        "id": 1,
+        "name": "Buddy",
+        "age": 3,
+        "breed": 1,
+        "gender": "Male",
+        "color": "Yellow",
+        "favoritefood": "Chicken",
+        "favoritetoy": "Ball"
+      }
+    ]
+  },
+  {
+    "request": "07 Dog GET detail",
+    "method": "GET",
+    "url": "http://127.0.0.1:8765/api/dogs/1",
+    "request_body": null,
+    "status": 200,
+    "response_body": {
+      "id": 1,
+      "name": "Buddy",
+      "age": 3,
+      "breed": 1,
+      "gender": "Male",
+      "color": "Yellow",
+      "favoritefood": "Chicken",
+      "favoritetoy": "Ball"
+    }
+  },
+  {
+    "request": "08 Dog PUT",
+    "method": "PUT",
+    "url": "http://127.0.0.1:8765/api/dogs/1",
+    "request_body": {
+      "name": "Buddy",
+      "age": 4,
+      "breed": 1,
+      "gender": "Male",
+      "color": "Yellow",
+      "favoritefood": "Chicken",
+      "favoritetoy": "Ball"
+    },
+    "status": 200,
+    "response_body": {
+      "id": 1,
+      "name": "Buddy",
+      "age": 4,
+      "breed": 1,
+      "gender": "Male",
+      "color": "Yellow",
+      "favoritefood": "Chicken",
+      "favoritetoy": "Ball"
+    }
+  },
+  {
+    "request": "09 Dog DELETE",
+    "method": "DELETE",
+    "url": "http://127.0.0.1:8765/api/dogs/1",
+    "request_body": null,
+    "status": 204,
+    "response_body": null
+  },
+  {
+    "request": "10 Breed DELETE",
+    "method": "DELETE",
+    "url": "http://127.0.0.1:8765/api/breeds/1",
+    "request_body": null,
+    "status": 204,
+    "response_body": null
+  }
+]
